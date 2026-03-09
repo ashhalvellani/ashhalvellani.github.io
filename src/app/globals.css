@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --void: #0a0a0f;
+  --void-light: #12121a;
+  --surface: #16161f;
+  --surface-hover: #1e1e2a;
+  --cyan: #00f0ff;
+  --cyan-dim: rgba(0, 240, 255, 0.6);
+  --magenta: #ff2a6d;
+  --magenta-dim: rgba(255, 42, 109, 0.6);
+  --green: #05ffa1;
+  --text: #e8e8ed;
+  --text-muted: #8a8a9a;
+  --border: rgba(0, 240, 255, 0.15);
+}
+
+@theme {
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+  --color-void: #0a0a0f;
+  --color-cyan: #00f0ff;
+  --color-magenta: #ff2a6d;
+}
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+/* Scanline overlay */
+.scanlines::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
