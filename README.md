@@ -13,7 +13,7 @@ A modern portfolio built with **Next.js 16**, **Tailwind CSS v4**, **Framer Moti
 ## Getting Started
 
 ```bash
-# Install dependencies (already done)
+# Install dependencies
 npm install
 
 # Run development server
