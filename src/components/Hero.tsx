@@ -25,7 +25,7 @@ export default function Hero() {
           <span className="text-gray-100">Hello,</span>
           <br />
           I&apos;m{" "}
-          <span className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-pink-500 bg-clip-text text-transparent">
             Ashhal Vellani
           </span>
         </motion.h1>
