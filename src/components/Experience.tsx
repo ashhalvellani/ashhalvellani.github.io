@@ -28,17 +28,17 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-24 px-6 md:px-12 lg:px-24 max-w-5xl mx-auto z-10">
+    <section id="experience" className="relative py-20 px-6 md:px-12 lg:px-24 max-w-5xl mx-auto z-10">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-['Orbitron'] text-2xl md:text-3xl font-bold mb-16 text-gray-100"
+        className="font-['Sora'] text-2xl md:text-3xl font-bold mb-12 text-gray-100"
       >
         <span className="text-cyan-400">01</span> Experience
       </motion.h2>
 
-      <div className="relative pl-8 md:pl-10 border-l-2 border-cyan-500/20">
+      <div className="relative pl-6 md:pl-8 border-l-2 border-cyan-500/20">
         {experiences.map((exp, i) => (
           <motion.div
             key={i}
@@ -46,20 +46,20 @@ export default function Experience() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="relative pb-12 last:pb-0 group"
+            className="relative pb-10 last:pb-0 group"
           >
             <motion.div
-              className="absolute -left-[41px] top-1 w-3 h-3 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(0,240,255,0.5)]"
+              className="absolute -left-[33px] top-1 w-3 h-3 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(0,240,255,0.5)]"
               whileHover={{ scale: 1.3 }}
             />
             <motion.div
-              className="p-6 rounded-lg border border-cyan-500/20 bg-[#16161f] hover:border-cyan-500/40 hover:shadow-[0_0_25px_rgba(0,240,255,0.08)] transition-all duration-300 group-hover:translate-x-2"
+              className="p-5 rounded-lg border border-cyan-500/20 bg-[#16161f] hover:border-cyan-500/40 hover:shadow-[0_0_25px_rgba(0,240,255,0.08)] transition-all duration-300 group-hover:translate-x-2"
               whileHover={{ x: 5 }}
             >
-              <span className="text-sm text-cyan-400 tracking-wider">{exp.period}</span>
-              <h3 className="font-['Orbitron'] text-xl font-semibold mt-2">{exp.title}</h3>
-              <p className="text-pink-500 font-semibold mt-1">{exp.company}</p>
-              <p className="text-gray-400 mt-3 leading-relaxed">{exp.description}</p>
+              <span className="text-sm text-cyan-400 font-medium tracking-wider">{exp.period}</span>
+              <h3 className="font-['Sora'] text-lg font-bold mt-2">{exp.title}</h3>
+              <p className="text-pink-500 font-bold text-sm mt-1">{exp.company}</p>
+              <p className="text-gray-400 mt-3 text-sm leading-relaxed">{exp.description}</p>
             </motion.div>
           </motion.div>
         ))}

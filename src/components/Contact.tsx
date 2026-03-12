@@ -23,12 +23,12 @@ const contactLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-24 px-6 md:px-12 lg:px-24 max-w-2xl mx-auto z-10">
+    <section id="contact" className="relative py-20 px-6 md:px-12 lg:px-24 max-w-2xl mx-auto z-10">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-['Orbitron'] text-2xl md:text-3xl font-bold mb-16 text-gray-100"
+        className="font-['Sora'] text-2xl md:text-3xl font-bold mb-12 text-gray-100"
       >
         <span className="text-cyan-400">04</span> Contact
       </motion.h2>
@@ -38,10 +38,10 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <p className="font-['Orbitron'] text-xl mb-4">
+        <p className="font-['Sora'] text-lg font-bold mb-4">
           I&apos;d love to hear from you.
         </p>
-        <p className="text-gray-400 mb-10">
+        <p className="text-gray-400 text-sm leading-relaxed mb-10">
           Open to new opportunities, collaborations, and interesting conversations. Reach out through
           any of the channels below.
         </p>
@@ -57,12 +57,12 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ x: 8 }}
-              className="flex items-center gap-4 p-4 rounded-lg border border-cyan-500/20 bg-[#16161f] hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(0,240,255,0.15)] transition-all"
+              className="flex items-center gap-4 p-3 rounded-lg border border-cyan-500/20 bg-[#16161f] hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(0,240,255,0.15)] transition-all"
             >
               <div className="w-10 h-10 flex items-center justify-center rounded-md bg-cyan-500/10 text-cyan-400">
                 <link.icon size={20} />
               </div>
-              <span className="text-gray-100">{link.label}</span>
+              <span className="text-gray-100 text-sm font-medium">{link.label}</span>
             </motion.a>
           ))}
         </div>

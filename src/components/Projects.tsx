@@ -56,17 +56,17 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 px-6 md:px-12 lg:px-24 max-w-6xl mx-auto z-10">
+    <section id="projects" className="relative py-20 px-6 md:px-12 lg:px-24 max-w-6xl mx-auto z-10">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-['Orbitron'] text-2xl md:text-3xl font-bold mb-16 text-gray-100"
+        className="font-['Sora'] text-2xl md:text-3xl font-bold mb-12 text-gray-100"
       >
         <span className="text-cyan-400">02</span> Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project, i) => (
           <motion.article
             key={i}
@@ -75,28 +75,28 @@ export default function Projects() {
             viewport={{ once: true, margin: "-30px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             whileHover={{ y: -8 }}
-            className="group relative p-6 rounded-lg border border-cyan-500/20 bg-[#16161f] overflow-hidden hover:border-cyan-500/40 hover:shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-300"
+            className="group relative p-5 rounded-lg border border-cyan-500/20 bg-[#16161f] overflow-hidden hover:border-cyan-500/40 hover:shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-300"
           >
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-400 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex justify-between items-start mb-4">
-              <span className="font-['Orbitron'] text-2xl text-cyan-400/60">{project.icon}</span>
+              <span className="font-['Sora'] text-2xl text-cyan-400/60">{project.icon}</span>
               <a
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-cyan-400 hover:text-pink-500 transition-colors"
+                className="flex items-center gap-2 text-sm font-medium text-cyan-400 hover:text-pink-500 transition-colors"
               >
                 <Github size={18} />
                 GitHub
               </a>
             </div>
-            <h3 className="font-['Orbitron'] text-xl font-semibold mb-3">{project.title}</h3>
+            <h3 className="font-['Sora'] text-lg font-bold mb-3">{project.title}</h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs px-2 py-1 rounded border border-cyan-500/20 bg-cyan-500/5 text-cyan-400/80"
+                  className="text-xs font-medium px-2 py-0.5 rounded border border-cyan-500/20 bg-cyan-500/5 text-cyan-400/80"
                 >
                   {tag}
                 </span>

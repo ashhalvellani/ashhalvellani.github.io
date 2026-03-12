@@ -35,7 +35,7 @@ export default function Navbar() {
     >
       <Link
         href="#"
-        className="font-['Orbitron'] font-bold text-lg tracking-wider text-cyan-400 hover:text-cyan-300 transition-colors hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]"
+        className="font-['Sora'] font-bold text-lg tracking-wider text-cyan-400 hover:text-cyan-300 transition-colors hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]"
       >
         // AV
       </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
           <li key={link.href}>
             <Link
               href={link.href}
-              className="font-['Orbitron'] text-sm font-medium text-gray-400 hover:text-cyan-400 transition-colors hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]"
+              className="font-['Sora'] text-sm font-medium text-gray-400 hover:text-cyan-400 transition-colors hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]"
             >
               {link.label}
             </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-['Orbitron'] text-lg font-medium text-gray-400 hover:text-cyan-400 transition-colors"
+                    className="font-['Sora'] text-base font-medium text-gray-400 hover:text-cyan-400 transition-colors"
                   >
                     {link.label}
                   </Link>

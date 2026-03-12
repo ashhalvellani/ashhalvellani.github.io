@@ -12,7 +12,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-block text-sm md:text-base text-cyan-400 tracking-[0.3em] uppercase mb-4"
+          className="inline-block text-sm md:text-base text-cyan-400 tracking-[0.25em] uppercase mb-4 font-medium"
         >
           Software Engineer · Full-Stack Developer
         </motion.span>
@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-['Orbitron'] text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
+          className="font-['Sora'] text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5"
         >
           <span className="text-gray-100">Hello,</span>
           <br />
@@ -33,7 +33,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg text-gray-400 mb-8 max-w-xl"
+          className="text-base md:text-lg text-gray-400 mb-8 max-w-xl leading-relaxed"
         >
           Computer Science graduate from Simon Fraser University.<br />
           Passionate about elegant solutions and cutting-edge technology.
@@ -46,13 +46,13 @@ export default function Hero() {
         >
           <Link
             href="#experience"
-            className="inline-flex items-center gap-2 px-6 py-3 font-['Orbitron'] font-semibold text-sm tracking-wider bg-cyan-500 text-[#0a0a0f] rounded hover:bg-cyan-400 transition-all hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-5 py-2.5 font-['Sora'] font-semibold text-sm tracking-wider bg-cyan-500 text-[#0a0a0f] rounded hover:bg-cyan-400 transition-all hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] hover:-translate-y-0.5"
           >
             View My Work
           </Link>
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 font-['Orbitron'] font-semibold text-sm tracking-wider border-2 border-cyan-500 text-cyan-400 rounded hover:bg-cyan-500/10 transition-all hover:shadow-[0_0_20px_rgba(0,240,255,0.3)]"
+            className="inline-flex items-center gap-2 px-5 py-2.5 font-['Sora'] font-semibold text-sm tracking-wider border-2 border-cyan-500 text-cyan-400 rounded hover:bg-cyan-500/10 transition-all hover:shadow-[0_0_20px_rgba(0,240,255,0.3)]"
           >
             Get In Touch
           </Link>
@@ -72,7 +72,7 @@ export default function Hero() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <span className="text-xs font-['Orbitron'] tracking-widest">SCROLL</span>
+          <span className="text-xs font-['Sora'] font-medium tracking-widest">SCROLL</span>
           <ChevronDown size={20} />
         </motion.a>
       </motion.div>
