@@ -1,6 +1,6 @@
 # AV Portfolio
 
-[ashhalvellani.github.io](https://ashhalvellani.github.io)
+[ashhal.tech](https://ashhal.tech)
 
 A modern portfolio built with **Next.js 16**, **Tailwind CSS v4**, **Framer Motion**, and **Lucide React**.
 
