@@ -11,6 +11,13 @@ const experiences = [
       "Upgraded three enterprise Java/Spring Boot applications by refactoring deprecated APIs and updating dependencies. Implemented a SAML 2.0 single sign-on solution across 10 internal applications and improved deployment reliability using Jenkins CI/CD and WildFly across environments supporting 500+ retail stores.",
   },
   {
+    period: "Apr - Sep 2024",
+    title: "Junior Software Engineer",
+    company: "Medimen Healthcare Ltd.",
+    description:
+      "Built a full-stack tender intelligence platform (React, FastAPI, PostgreSQL) automating the discovery of government medical equipment tenders. Developed an AI-powered document parsing system using Python and OpenAI’s GPT-4 to summarize 100+ page government tender PDFs and extract key information.",
+  },
+  {
     period: "May - Aug 2023",
     title: "Software Test Engineer Co-op",
     company: "Epic Safety",

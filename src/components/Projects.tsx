@@ -21,10 +21,10 @@ const projects = [
     icon: "{}",
   },
   {
-    title: "Expense Tracker",
+    title: "Penny Pursuit",
     description:
       "Developed a full-stack expense tracking web application using the MERN stack, enabling users to record, manage, and visualize financial transactions.",
-    githubUrl: "https://github.com/ashhalvellani/",
+    githubUrl: "https://github.com/ashhalvellani/penny-pursuit",
     tags: ["React", "Node.js", "Express", "MongoDB"],
     icon: "</>",
   },
